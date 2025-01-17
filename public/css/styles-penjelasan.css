@@ -1,0 +1,105 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #fef9e4; /* Warna latar belakang cerah, hampir putih dengan sentuhan kuning muda */
+    color: #4a4a4a; /* Warna teks gelap untuk kontras yang lembut */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+}
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('/img/latarpenjelasan.jpg'); /* Latar belakang gambar awan cerah */
+    background-size: cover;
+    background-position: center;
+    z-index: -1;
+    filter: brightness(0.7); /* Mengatur kecerahan gambar latar agar tidak terlalu terang */
+}
+
+.form-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.85); /* Latar belakang putih transparan dengan sedikit bayangan */
+    border-radius: 15px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+    text-align: center;
+    backdrop-filter: blur(5px); /* Blur ringan pada latar belakang */
+}
+
+header {
+    background-color: #ebf9fb; /* Warna biru cerah seperti langit cerah */
+    color: #2f4f4f; /* Warna teks gelap agar kontras dengan biru cerah */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #4682b4; /* Border biru lebih gelap */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #e0fff8; /* Warna merah tomat cerah untuk judul */
+    text-shadow: 0 0 10px rgba(255, 99, 71, 0.9); /* Efek glow merah cerah */
+}
+
+.intro, .example, .features {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #f9e08d; /* Border kuning lembut sesuai dengan tema */
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.7); /* Latar belakang putih transparan dengan bayangan */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Bayangan lembut */
+}
+
+strong {
+    color: #e0fff8; /* Warna merah tomat cerah untuk teks tebal */
+    text-shadow: 0 0 10px rgba(255, 99, 71, 1); /* Efek glow merah cerah */
+}
+
+footer {
+    margin-top: 20px;
+    padding: 20px;
+    text-align: center;
+    background-color: #ebf9fb; /* Latar belakang footer biru cerah */
+    color: #2f4f4f; /* Warna teks footer lebih gelap agar kontras dengan biru cerah */
+    border-top: 1px solid #4682b4; /* Border biru lebih gelap */
+    box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.05); /* Bayangan lembut */
+}
+
+nav {
+    background-color: #87ceeb; /* Latar belakang navbar biru cerah */
+    padding: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav a {
+    color: #2f4f4f; /* Warna teks tautan lebih gelap untuk kontras yang lembut */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8); /* Efek cahaya lembut */
+}
+
+nav a:hover {
+    color: #ff6347; /* Warna merah tomat cerah saat hover */
+    text-shadow: 0 0 10px rgba(255, 99, 71, 1), 0 0 20px rgba(255, 99, 71, 0.5); /* Efek glow merah cerah saat hover */
+}
